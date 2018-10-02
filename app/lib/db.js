@@ -2,11 +2,17 @@ var streamsql = require('streamsql');
 var mysql = require('mysql');
 
 var options = {
-  driver: 'mysql',
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  driver: "mysql",
+  host: '',
+  user: "badges",
+  password: "badges",
+  database: "badgekit",
+
+//  host: process.env.DB_HOST,
+//  user: process.env.DB_USER,
+//  password: process.env.DB_PASSWORD,
+//  database: process.env.DB_NAME,
+
 }
 
 var db = streamsql.connect(options);
